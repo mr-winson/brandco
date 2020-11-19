@@ -30,7 +30,7 @@ function showsearchresults() {
     var i;
     for (i = 0; i < searchids.length; i++) {
         var html = html + `
-        <div class="icon" title="${resources[searchids[i]].name}" onclick='download("/brand/${resources[searchids[i]].name}.zip")'>
+        <div class="icon" title="${resources[searchids[i]].name}" onclick='download("brand/${resources[searchids[i]].name}.zip")'>
             <table>
                 <tbody>
                     <tr>
@@ -47,18 +47,18 @@ function showsearchresults() {
 var searchids = [];
 var resources = [{
     id: 0,
-    img: '/img/twitter.png',
+    img: 'img/twitter.png',
     name: 'twitter'
 }, {
     id: 1,
-    img: '/img/discord.png',
+    img: 'img/discord.png',
     name: 'discord'
 }, {
     id: 2,
-    img: '/img/facebook.png',
+    img: 'img/facebook.png',
     name: 'facebook'
 }, {
     id: 3,
-    img: '/img/instagram.png',
+    img: 'img/instagram.png',
     name: 'instagram'
 }];
